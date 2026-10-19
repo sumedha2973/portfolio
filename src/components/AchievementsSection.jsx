@@ -1,120 +1,184 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, CheckCircle2, ExternalLink, Sparkles, Trophy, Calendar, ShieldCheck, Flame, BookOpen } from 'lucide-react';
+import { 
+  Award, 
+  Trophy, 
+  Code2, 
+  Terminal, 
+  GraduationCap, 
+  ExternalLink, 
+  Sparkles, 
+  ShieldCheck, 
+  BarChart3, 
+  Bot, 
+  ArrowUpRight 
+} from 'lucide-react';
 import { certificationsAndAchievements } from '../data/portfolioData';
+
+// 8 curated achievements and certifications matching the 4x2 grid reference design
+const achievementsList = [
+  {
+    id: 'deloitte',
+    title: 'Deloitte Simulation',
+    subtitle: 'Data Analytics & Forensic Telemetry',
+    issuer: 'Deloitte Australia',
+    icon: Award,
+    iconBg: 'bg-rose-50 text-rose-600 border-rose-200/80',
+    iconGradient: 'from-rose-500/20 to-pink-500/10',
+    link: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/deloitte-sumedha.pdf',
+    badge: 'Deloitte Verified'
+  },
+  {
+    id: 'cisco-python',
+    title: 'Cisco Certified Python',
+    subtitle: 'Core Python & Modular OOP Architecture',
+    issuer: 'Cisco Networking Academy',
+    icon: Terminal,
+    iconBg: 'bg-indigo-50 text-indigo-600 border-indigo-200/80',
+    iconGradient: 'from-indigo-500/20 to-blue-500/10',
+    link: 'https://www.credly.com/org/cisco/sumedha',
+    badge: 'Cisco Credential'
+  },
+  {
+    id: 'hackathon',
+    title: 'Smart Tech Finalist',
+    subtitle: 'Top 5% National AI Innovation Sprint',
+    issuer: 'Smart Tech Challenge',
+    icon: Trophy,
+    iconBg: 'bg-amber-50 text-amber-600 border-amber-200/80',
+    iconGradient: 'from-amber-500/20 to-rose-500/10',
+    link: '#hackathons',
+    badge: 'Top 5 Finalist'
+  },
+  {
+    id: 'leetcode',
+    title: '250+ LeetCode Solved',
+    subtitle: 'Optimized C++ Algorithms & Data Structures',
+    issuer: 'Competitive Programming',
+    icon: Code2,
+    iconBg: 'bg-emerald-50 text-emerald-600 border-emerald-200/80',
+    iconGradient: 'from-emerald-500/20 to-teal-500/10',
+    link: 'https://leetcode.com/sumedha-codes',
+    badge: '250+ Solved'
+  },
+  {
+    id: 'mca-honors',
+    title: 'MCA Academic Honors',
+    subtitle: 'Top Percentile & Peer Mentorship Lead',
+    issuer: 'Dept. of Computer Applications',
+    icon: GraduationCap,
+    iconBg: 'bg-purple-50 text-purple-600 border-purple-200/80',
+    iconGradient: 'from-purple-500/20 to-pink-500/10',
+    link: '#college',
+    badge: 'Academic Honors'
+  },
+  {
+    id: 'powerbi-analytics',
+    title: 'Power BI & DAX Specialist',
+    subtitle: 'Executive Dashboards & Star Schema',
+    issuer: 'Business Intelligence',
+    icon: BarChart3,
+    iconBg: 'bg-pink-50 text-pink-600 border-pink-200/80',
+    iconGradient: 'from-pink-500/20 to-rose-500/10',
+    link: '#data-analytics',
+    badge: 'BI Modeling'
+  },
+  {
+    id: 'crewai-agents',
+    title: 'CrewAI Multi-Agents',
+    subtitle: 'Autonomous Collaboration & Local LLMs',
+    issuer: 'Applied AI Architecture',
+    icon: Bot,
+    iconBg: 'bg-sky-50 text-sky-600 border-sky-200/80',
+    iconGradient: 'from-sky-500/20 to-indigo-500/10',
+    link: '#projects',
+    badge: 'Autonomous AI'
+  },
+  {
+    id: 'fullstack-builder',
+    title: 'Verified Full-Stack Builder',
+    subtitle: 'Modern React & RESTful API Tooling',
+    issuer: 'Production Software',
+    icon: ShieldCheck,
+    iconBg: 'bg-rose-50 text-rose-700 border-rose-200/80',
+    iconGradient: 'from-rose-500/20 to-maroon-500/10',
+    link: 'https://github.com/sumedha-dev',
+    badge: 'Verified Builder'
+  }
+];
 
 export default function AchievementsSection() {
   return (
-    <section id="achievements" className="py-20 relative bg-gradient-to-b from-transparent via-[#faebef]/40 to-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="achievements" className="py-24 sm:py-32 relative bg-gradient-to-b from-transparent via-[#fdf7f9]/50 to-transparent">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-maroon-100/80 border border-maroon-200 text-maroon-900 text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-maroon-600" />
+        {/* Section Header Matching Reference Image */}
+        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-rose-100/80 border border-rose-200/90 text-rose-900 text-xs font-bold uppercase tracking-wider mb-3.5 shadow-xs">
+            <Sparkles className="w-3.5 h-3.5 text-rose-600" />
             <span>Milestones & Recognition</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#250d18] tracking-tight">
-            Certifications & Hackathon Highlights
+          <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            Awards & Achievements
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
-            Industry credentials from global organizations and competitive hackathon honors proving problem-solving under pressure.
+          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            Recognition from industry leaders, competitive hackathons, and professional certifications that validate my expertise.
           </p>
         </div>
 
-        {/* Certifications & Hackathons Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12">
-          {certificationsAndAchievements.map((item, idx) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="p-7 sm:p-8 rounded-3xl bg-white/95 backdrop-blur-md border border-maroon-100/90 shadow-sm hover:shadow-xl hover:shadow-maroon-950/5 hover:-translate-y-1 transition-all flex flex-col justify-between group"
-            >
-              <div>
-                <div className="flex items-center justify-between gap-3 mb-3">
-                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-maroon-100 text-maroon-800 border border-maroon-200 flex items-center gap-1.5">
-                    <ShieldCheck className="w-3.5 h-3.5 text-maroon-600" />
-                    {item.badge}
+        {/* 4-Column x 2-Row Card Grid Matching Reference Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 items-stretch">
+          {achievementsList.map((item, idx) => {
+            const Icon = item.icon;
+            const isExternal = item.link.startsWith('http');
+
+            return (
+              <motion.a
+                key={item.id}
+                href={item.link}
+                target={isExternal ? '_blank' : '_self'}
+                rel={isExternal ? 'noreferrer' : undefined}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: idx * 0.06 }}
+                className="rounded-2xl sm:rounded-3xl bg-white border border-slate-200/80 hover:border-rose-300/80 p-6 sm:p-8 shadow-sm hover:shadow-xl hover:shadow-rose-100/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center justify-between group relative overflow-hidden cursor-pointer"
+              >
+                {/* Subtle Top Border Gradient on Hover */}
+                <div className="h-1 w-full absolute top-0 left-0 bg-gradient-to-r from-rose-400 via-pink-400 to-rose-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                {/* Subtle Hover Link Indicator */}
+                <div className="absolute top-3.5 right-3.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-rose-600">
+                  <ArrowUpRight className="w-4 h-4" />
+                </div>
+
+                <div className="flex flex-col items-center">
+                  {/* Circular Badge / Icon Matching Reference Avatars */}
+                  <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full border flex items-center justify-center mb-4 sm:mb-5 shadow-2xs group-hover:scale-110 transition-transform duration-300 relative ${item.iconBg}`}>
+                    <div className={`absolute inset-0 rounded-full bg-gradient-to-br ${item.iconGradient} opacity-70`} />
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 relative z-10" />
+                  </div>
+
+                  {/* Achievement Title */}
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-950 transition-colors tracking-tight mb-1.5">
+                    {item.title}
+                  </h3>
+
+                  {/* Subtitle / Description */}
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                    {item.subtitle}
+                  </p>
+                </div>
+
+                {/* Subtle Category / Issuer Tag */}
+                <div className="mt-4 pt-3 border-t border-slate-100 w-full flex items-center justify-center">
+                  <span className="text-[11px] font-semibold text-slate-400 group-hover:text-rose-700 transition-colors">
+                    {item.issuer}
                   </span>
-                  <span className="text-xs font-mono text-gray-500 flex items-center gap-1">
-                    <Calendar className="w-3 h-3" />
-                    {item.date}
-                  </span>
                 </div>
-
-                <h3 className="text-lg sm:text-xl font-bold text-maroon-950 group-hover:text-maroon-800 transition-colors mb-1">
-                  {item.title}
-                </h3>
-                <div className="text-xs sm:text-sm font-semibold text-maroon-700 mb-3">
-                  Issued by {item.issuer}
-                </div>
-
-                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-5">
-                  {item.description}
-                </p>
-
-                {/* Skills gained */}
-                <div className="flex flex-wrap gap-1.5 mb-6">
-                  {item.skillsGained.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-2.5 py-0.5 rounded-md text-[11px] font-medium bg-[#faf3f5] text-maroon-900 border border-maroon-100"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Card Footer Link */}
-              <div className="pt-4 border-t border-maroon-100/70 flex items-center justify-between">
-                <span className="text-xs font-bold text-maroon-900">
-                  {item.type}
-                </span>
-                <a
-                  href={item.credentialLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1 text-xs font-bold text-maroon-700 hover:text-maroon-950 transition-colors"
-                >
-                  <span>Verify Credential</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Hackathon Photo & Sprint Spotlight Banner */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#440f20] via-[#6f1b34] to-[#99284a] text-white shadow-xl shadow-maroon-950/15 overflow-hidden relative">
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div className="lg:col-span-8">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-rose-200 text-xs font-bold uppercase tracking-wider mb-3">
-                <Flame className="w-4 h-4 text-amber-400" />
-                <span>Competitive Coding & Innovation Sprint</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold mb-2">
-                36-Hour Hackathon High-Pressure Prototyping
-              </h3>
-              <p className="text-xs sm:text-sm text-rose-100/90 leading-relaxed max-w-2xl">
-                Collaborated in cross-functional agile teams under stringent time deadlines. Architected data schemas, built responsive frontend components, and delivered working interactive MVPs presented directly to industry juries.
-              </p>
-            </div>
-
-            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
-              <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
-                <div className="text-2xl font-black text-rose-200">Top 5%</div>
-                <div className="text-xs text-rose-100">National Finalist Ranking</div>
-              </div>
-              <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
-                <div className="text-2xl font-black text-rose-200">100%</div>
-                <div className="text-xs text-rose-100">Project Delivery On Time</div>
-              </div>
-            </div>
-          </div>
+              </motion.a>
+            );
+          })}
         </div>
 
       </div>
