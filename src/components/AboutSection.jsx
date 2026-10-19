@@ -38,7 +38,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fff9fb] to-[#faedf2] border border-rose-200/70 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fff9fb] to-[#faedf2] border border-rose-200/70 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1.5 hover:scale-[1.01] transition-all duration-300 ease-out group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-3 mb-5">
@@ -80,48 +80,48 @@ export default function AboutSection() {
             </div>
           </motion.div>
 
-          {/* Card 2: DSA & C++ */}
+          {/* Card 2: DSA & C++ (Clean Light Styling) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-[#240612] via-[#3b0b1e] to-[#18040c] text-white border border-rose-900/40 shadow-xl shadow-maroon-950/25 hover:shadow-2xl hover:shadow-maroon-900/40 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fff9fa] to-[#faedf2] border border-rose-200/70 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1.5 hover:scale-[1.01] transition-all duration-300 ease-out group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-3 mb-5">
-                <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-rose-300 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-300">
-                  <Code2 className="w-6 h-6 text-rose-300" />
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-maroon-900 to-rose-600 text-white flex items-center justify-center shadow-md shadow-maroon-900/15 group-hover:scale-110 transition-transform duration-300">
+                  <Code2 className="w-6 h-6 text-white" />
                 </div>
-                <span className="px-3 py-1 rounded-full bg-rose-500/20 border border-rose-400/30 text-[11px] font-bold text-rose-200 tracking-wide">
-                  C++ • LeetCode
-                </span>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100/70 border border-rose-200/80 text-[11px] font-bold text-maroon-900 uppercase tracking-wider">
+                  <span>C++ • LeetCode</span>
+                </div>
               </div>
 
               <div className="mb-4">
-                <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-200 via-rose-300 to-white tracking-tight">
+                <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-maroon-900 via-maroon-700 to-rose-600 tracking-tight">
                   250+
                 </div>
-                <p className="text-xs uppercase font-bold tracking-wider text-rose-300/90 mt-1">
+                <p className="text-xs uppercase font-bold tracking-wider text-maroon-900/80 mt-1">
                   Problems Solved & Verified
                 </p>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-maroon-950 mb-3">
                 DSA & C++
               </h3>
-              <p className="text-xs sm:text-sm text-rose-100/80 leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-700 leading-relaxed mb-4">
                 Practicing core computer science problem solving in C++. Focused on arrays, trees, dynamic programming, and writing clean, space-optimized algorithms.
               </p>
             </div>
 
-            {/* Mini Terminal Code Snippet */}
-            <div className="mt-5 pt-4 border-t border-white/10 font-mono text-[11px] text-rose-200/90 flex items-center justify-between bg-black/30 px-3.5 py-2 rounded-xl border border-white/5">
-              <div className="flex items-center gap-1.5">
+            {/* Mini Terminal Code Snippet (Light Styled) */}
+            <div className="mt-5 pt-4 border-t border-rose-100/90 font-mono text-[11px] text-maroon-950 flex items-center justify-between bg-rose-50/80 px-3.5 py-2 rounded-xl border border-rose-200/70">
+              <div className="flex items-center gap-1.5 font-semibold">
                 <span className="w-2 h-2 rounded-full bg-rose-500" />
                 <span>solve(vector&lt;int&gt;&amp; nums)</span>
               </div>
-              <span className="text-[10px] text-rose-400 font-bold">O(N log N)</span>
+              <span className="text-[10px] text-rose-700 font-bold bg-white px-2 py-0.5 rounded border border-rose-200/70 shadow-2xs">O(N log N)</span>
             </div>
           </motion.div>
 
@@ -131,7 +131,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="p-7 sm:p-8 rounded-3xl bg-white border border-rose-200/80 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fff9fb] to-[#faedf2] border border-rose-200/70 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1.5 hover:scale-[1.01] transition-all duration-300 ease-out group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-3 mb-5">
