@@ -247,18 +247,12 @@ export default function AboutSection() {
               <h3 className="text-xl sm:text-2xl font-extrabold text-maroon-950 mb-4">
                 "Where curiosity for data meets the joy of building software."
               </h3>
-              <div className="space-y-3.5 text-xs sm:text-sm text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-xs sm:text-sm text-gray-700 leading-relaxed">
                 <p>
-                  I love working at the intersection of data intelligence and web engineering. For me, analyzing numbers isn't just about formulas—it's about uncovering the human stories and operational patterns hidden beneath them.
+                  I’m an MCA student working at the intersection of data analytics and software engineering. Driven by curiosity, I love transforming messy, complex datasets into clear, actionable stories—whether that means modeling retention drivers in SQL and Power BI or uncovering operational trends that inform real business decisions.
                 </p>
                 <p>
-                  As a Master of Computer Applications (MCA) student, I realized early on that data and code are two sides of the same coin. A machine learning model or analytical dashboard is only as valuable as the clarity and ease with which people can interact with it.
-                </p>
-                <p>
-                  I've immersed myself in the complete workflow: from wrangling messy real-world datasets and optimizing SQL queries, to practicing dynamic programming in C++ and building responsive, animated React interfaces.
-                </p>
-                <p>
-                  Whether I'm writing DAX measures in Power BI, refining an algorithm, or wiring up an API endpoint, I value thoughtful architecture, intellectual curiosity, and grounded simplicity.
+                  Alongside analytics, I build fast, intuitive web applications and autonomous AI workflows with React, Python, and C++. With a strong foundation in data structures and 250+ LeetCode problems solved, my focus is on shipping clean, performant software that bridges raw data with seamless user experiences.
                 </p>
               </div>
             </div>
