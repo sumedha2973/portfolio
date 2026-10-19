@@ -199,21 +199,21 @@ export default function ResumeModal({ isOpen, onClose, initialResumeId = 'data-a
                         <span className="text-[11px] text-gray-500 font-mono">SQL, Python, Seaborn</span>
                       </div>
                       <p className="text-xs text-gray-600 mt-1">
-                        • Executed exploratory analysis over 500,000+ retail transactions; discovered top 18% customer cohort generates 54% of revenue.<br />
-                        • Formulated automated RFM segment scores in MySQL to trigger tailored churn mitigation campaigns.
+                        • Executed exploratory analysis over 50,000+ retail transactions; discovered top 18% customer cohort generates 54% of sales.<br />
+                        • Formulated RFM segment scores in MySQL to identify customer purchasing cohorts.
                       </p>
                     </div>
 
                     <div className="border-l-2 border-maroon-400 pl-3">
                       <div className="flex justify-between items-baseline">
                         <span className="font-bold text-gray-900 text-xs sm:text-sm">
-                          Executive Excel Sales & Margin Performance Dashboard
+                          Sales Performance & Margin Analysis Dashboard
                         </span>
                         <span className="text-[11px] text-gray-500 font-mono">Advanced Excel, Power Pivot</span>
                       </div>
                       <p className="text-xs text-gray-600 mt-1">
-                        • Built dynamic C-suite dashboard using Power Pivot models, nested formulas, and dynamic slicers across 450+ retail SKUs.<br />
-                        • Automated monthly reporting routine, cutting data consolidation time by 90%.
+                        • Built interactive dashboard using dynamic pivot tables, nested formulas (XLOOKUP), and slicers across 450+ retail SKUs.<br />
+                        • Automated weekly report prep routines to streamline data consolidation.
                       </p>
                     </div>
                   </>

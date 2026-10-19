@@ -20,7 +20,7 @@ const achievementsList = [
   {
     id: 'deloitte',
     title: 'Deloitte Simulation',
-    subtitle: 'Data Analytics & Forensic Telemetry',
+    subtitle: 'Data Analysis & Storytelling Simulation',
     issuer: 'Deloitte Australia',
     icon: Award,
     iconBg: 'bg-rose-50 text-rose-600 border-rose-200/80',
@@ -31,7 +31,7 @@ const achievementsList = [
   {
     id: 'cisco-python',
     title: 'Cisco Certified Python',
-    subtitle: 'Core Python & Modular OOP Architecture',
+    subtitle: 'Core Python & Object-Oriented Basics',
     issuer: 'Cisco Networking Academy',
     icon: Terminal,
     iconBg: 'bg-indigo-50 text-indigo-600 border-indigo-200/80',
@@ -42,7 +42,7 @@ const achievementsList = [
   {
     id: 'hackathon',
     title: 'Smart Tech Finalist',
-    subtitle: 'Top 5% National AI Innovation Sprint',
+    subtitle: 'Top 5 Finalist in 36-Hour Hackathon',
     issuer: 'Smart Tech Challenge',
     icon: Trophy,
     iconBg: 'bg-amber-50 text-amber-600 border-amber-200/80',
@@ -53,7 +53,7 @@ const achievementsList = [
   {
     id: 'leetcode',
     title: '250+ LeetCode Solved',
-    subtitle: 'Optimized C++ Algorithms & Data Structures',
+    subtitle: 'C++ Algorithmic Problem Solving',
     issuer: 'Competitive Programming',
     icon: Code2,
     iconBg: 'bg-emerald-50 text-emerald-600 border-emerald-200/80',
@@ -64,7 +64,7 @@ const achievementsList = [
   {
     id: 'mca-honors',
     title: 'MCA Academic Honors',
-    subtitle: 'Top Percentile & Peer Mentorship Lead',
+    subtitle: 'Strong Academic Standing & Peer Study',
     issuer: 'Dept. of Computer Applications',
     icon: GraduationCap,
     iconBg: 'bg-purple-50 text-purple-600 border-purple-200/80',
@@ -74,8 +74,8 @@ const achievementsList = [
   },
   {
     id: 'powerbi-analytics',
-    title: 'Power BI & DAX Specialist',
-    subtitle: 'Executive Dashboards & Star Schema',
+    title: 'Power BI & DAX',
+    subtitle: 'Interactive Dashboards & Data Modeling',
     issuer: 'Business Intelligence',
     icon: BarChart3,
     iconBg: 'bg-pink-50 text-pink-600 border-pink-200/80',
@@ -85,25 +85,25 @@ const achievementsList = [
   },
   {
     id: 'crewai-agents',
-    title: 'CrewAI Multi-Agents',
-    subtitle: 'Autonomous Collaboration & Local LLMs',
-    issuer: 'Applied AI Architecture',
+    title: 'Applied AI Projects',
+    subtitle: 'Conversational LLMs & Agent Workflows',
+    issuer: 'Hands-on Projects',
     icon: Bot,
     iconBg: 'bg-sky-50 text-sky-600 border-sky-200/80',
     iconGradient: 'from-sky-500/20 to-indigo-500/10',
     link: '#projects',
-    badge: 'Autonomous AI'
+    badge: 'Applied AI'
   },
   {
     id: 'fullstack-builder',
-    title: 'Verified Full-Stack Builder',
-    subtitle: 'Modern React & RESTful API Tooling',
-    issuer: 'Production Software',
+    title: 'Full-Stack Web Apps',
+    subtitle: 'React, Tailwind CSS & REST APIs',
+    issuer: 'Academic & Personal',
     icon: ShieldCheck,
     iconBg: 'bg-rose-50 text-rose-700 border-rose-200/80',
     iconGradient: 'from-rose-500/20 to-maroon-500/10',
     link: 'https://github.com/sumedha-dev',
-    badge: 'Verified Builder'
+    badge: 'Web Projects'
   }
 ];
 
@@ -122,7 +122,7 @@ export default function AchievementsSection() {
             Awards & Achievements
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Recognition from industry leaders, competitive hackathons, and professional certifications that validate my expertise.
+            Milestones, certifications, and hackathon recognitions reflecting my continuous learning as an MCA student.
           </p>
         </div>
 

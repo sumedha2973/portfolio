@@ -94,7 +94,7 @@ export default function SkillsSection() {
             Technical Skills
           </h2>
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            I specialize in building full-stack applications, data analytics pipelines, and applied autonomous AI systems.
+            Core technical toolkit spanning data analytics, modern frontend development, and algorithmic problem solving as an MCA student.
           </p>
         </div>
 

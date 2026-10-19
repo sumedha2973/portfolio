@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, BarChart2, BrainCircuit, CheckCircle2, Sparkles, BookOpen, Layers, TrendingUp, Code2, Bot, ArrowRight } from 'lucide-react';
+import { GraduationCap, BarChart2, CheckCircle2, Sparkles, BookOpen, Layers, TrendingUp, Code2 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function AboutSection() {
   const stats = [
-    { value: "15+", label: "Data & Web Projects", note: "Hands-on & Academic" },
+    { value: "15+", label: "Data & Web Projects", note: "Academic & Personal" },
     { value: "250+", label: "LeetCode DSA Solved", note: "C++ & Python" },
-    { value: "500K+", label: "Data Rows Analyzed", note: "Retail & HR Datasets" },
+    { value: "50K+", label: "Data Rows Analyzed", note: "Retail & HR Datasets" },
     { value: "MCA", label: "Master of Computer Apps", note: "Active Student • 2023–2025" },
   ];
 
@@ -29,16 +29,16 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Asymmetric Bento Grid (1 column on mobile, 3 columns on desktop) */}
+        {/* 3-Column Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           
-          {/* Card 1: Data Stories & Analytics (Large Bento Card - md:col-span-2) */}
+          {/* Card 1: Data Stories & Analytics */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-2 p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fff9fb] to-[#faedf2] border border-rose-200/70 shadow-sm hover:shadow-2xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fff9fb] to-[#faedf2] border border-rose-200/70 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-3 mb-5">
@@ -47,44 +47,46 @@ export default function AboutSection() {
                 </div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100/70 border border-rose-200/80 text-[11px] font-bold text-maroon-900 uppercase tracking-wider">
                   <TrendingUp className="w-3.5 h-3.5 text-rose-600" />
-                  <span>EDA • SQL • Power BI</span>
+                  <span>SQL • Power BI</span>
                 </div>
               </div>
 
               <h3 className="text-xl sm:text-2xl font-extrabold text-maroon-950 mb-3">
                 Data Stories & Analytics
               </h3>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-xl">
-                Uncovering the actionable "why" behind the numbers. Digging into messy spreadsheets, building optimized SQL schemas, and designing interactive Power BI dashboards that turn raw records into strategic decisions.
+              <p className="text-xs sm:text-sm text-gray-700 leading-relaxed mb-4">
+                Finding clear answers in messy data. Querying relational tables with SQL, building interactive Power BI dashboards, and identifying practical trends for better decision making.
               </p>
             </div>
 
-            {/* Mini interactive data/chart visual */}
-            <div className="mt-6 pt-6 border-t border-rose-100/90 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-end gap-2.5 h-16 px-4 py-2 rounded-2xl bg-white/80 border border-rose-100 shadow-inner w-full sm:w-auto">
-                <div className="w-4 bg-rose-200 rounded-t-md h-8 group-hover:h-10 transition-all duration-500" />
-                <div className="w-4 bg-rose-300 rounded-t-md h-12 group-hover:h-14 transition-all duration-500 delay-75" />
-                <div className="w-4 bg-maroon-600 rounded-t-md h-10 group-hover:h-13 transition-all duration-500 delay-100" />
-                <div className="w-4 bg-maroon-800 rounded-t-md h-14 group-hover:h-16 transition-all duration-500 delay-150" />
-                <div className="w-4 bg-rose-500 rounded-t-md h-9 group-hover:h-12 transition-all duration-500 delay-200" />
-                <span className="text-[11px] font-bold text-maroon-900 ml-2 self-center">500K+ Data Points</span>
+            {/* Mini visual + tags */}
+            <div className="mt-5 pt-4 border-t border-rose-100/90 flex flex-col gap-3">
+              <div className="flex items-end gap-2 h-12 px-3 py-1.5 rounded-xl bg-white/80 border border-rose-100 shadow-inner w-full justify-between">
+                <div className="flex items-end gap-1.5 h-full">
+                  <div className="w-3 bg-rose-200 rounded-t-sm h-5 group-hover:h-7 transition-all duration-300" />
+                  <div className="w-3 bg-rose-300 rounded-t-sm h-8 group-hover:h-9 transition-all duration-300 delay-75" />
+                  <div className="w-3 bg-maroon-600 rounded-t-sm h-7 group-hover:h-9 transition-all duration-300 delay-100" />
+                  <div className="w-3 bg-maroon-800 rounded-t-sm h-10 group-hover:h-11 transition-all duration-300 delay-150" />
+                  <div className="w-3 bg-rose-500 rounded-t-sm h-6 group-hover:h-8 transition-all duration-300 delay-200" />
+                </div>
+                <span className="text-[11px] font-bold text-maroon-900 self-center">50K+ Records</span>
               </div>
 
-              <div className="flex flex-wrap gap-2 text-xs font-semibold text-maroon-900 w-full sm:w-auto justify-start sm:justify-end">
-                <span className="px-3 py-1 rounded-full bg-white border border-rose-200/80 shadow-xs">Python (Pandas)</span>
-                <span className="px-3 py-1 rounded-full bg-white border border-rose-200/80 shadow-xs">DAX Formulas</span>
-                <span className="px-3 py-1 rounded-full bg-white border border-rose-200/80 shadow-xs">Relational Joins</span>
+              <div className="flex flex-wrap gap-1.5 text-xs font-semibold text-maroon-900">
+                <span className="px-2.5 py-0.5 rounded-full bg-white border border-rose-200/80 shadow-2xs">Python</span>
+                <span className="px-2.5 py-0.5 rounded-full bg-white border border-rose-200/80 shadow-2xs">SQL Joins</span>
+                <span className="px-2.5 py-0.5 rounded-full bg-white border border-rose-200/80 shadow-2xs">DAX</span>
               </div>
             </div>
           </motion.div>
 
-          {/* Card 2: DSA & C++ (Dark Mode Contrasting Card - md:col-span-1) */}
+          {/* Card 2: DSA & C++ */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:col-span-1 p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-[#240612] via-[#3b0b1e] to-[#18040c] text-white border border-rose-900/40 shadow-xl shadow-maroon-950/25 hover:shadow-2xl hover:shadow-maroon-900/40 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+            className="p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-[#240612] via-[#3b0b1e] to-[#18040c] text-white border border-rose-900/40 shadow-xl shadow-maroon-950/25 hover:shadow-2xl hover:shadow-maroon-900/40 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-3 mb-5">
@@ -109,12 +111,12 @@ export default function AboutSection() {
                 DSA & C++
               </h3>
               <p className="text-xs sm:text-sm text-rose-100/80 leading-relaxed">
-                Building rigorous algorithmic muscle memory in C++. Focused on arrays, trees, dynamic programming, and writing clean, space-optimized logic.
+                Practicing core computer science problem solving in C++. Focused on arrays, trees, dynamic programming, and writing clean, space-optimized algorithms.
               </p>
             </div>
 
             {/* Mini Terminal Code Snippet */}
-            <div className="mt-6 pt-4 border-t border-white/10 font-mono text-[11px] text-rose-200/90 flex items-center justify-between bg-black/30 px-3.5 py-2 rounded-xl border border-white/5">
+            <div className="mt-5 pt-4 border-t border-white/10 font-mono text-[11px] text-rose-200/90 flex items-center justify-between bg-black/30 px-3.5 py-2 rounded-xl border border-white/5">
               <div className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-rose-500" />
                 <span>solve(vector&lt;int&gt;&amp; nums)</span>
@@ -123,13 +125,13 @@ export default function AboutSection() {
             </div>
           </motion.div>
 
-          {/* Card 3: Modern Web Craft (Clean Card - md:col-span-1) */}
+          {/* Card 3: Modern Web Craft (Streamlined & Clean) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="md:col-span-1 p-7 sm:p-8 rounded-3xl bg-white/95 backdrop-blur-md border border-rose-200/80 shadow-sm hover:shadow-2xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+            className="p-7 sm:p-8 rounded-3xl bg-white border border-rose-200/80 shadow-sm hover:shadow-xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-3 mb-5">
@@ -137,72 +139,24 @@ export default function AboutSection() {
                   <Layers className="w-6 h-6" />
                 </div>
                 <span className="px-3 py-1 rounded-full bg-rose-100/70 border border-rose-200/80 text-[11px] font-bold text-maroon-900 tracking-wide">
-                  Frontend UX
+                  Frontend Craft
                 </span>
-              </div>
-
-              <h3 className="text-lg sm:text-xl font-bold text-maroon-950 mb-2">
-                Modern Web Craft
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 leading-relaxed mb-4">
-                Crafting reactive, accessible user interfaces with React, Tailwind CSS, and REST APIs that feel inviting, fast, and delightful to interact with.
-              </p>
-            </div>
-
-            {/* Badges / Micro-UI preview */}
-            <div className="pt-4 border-t border-rose-100 flex flex-wrap gap-1.5 text-xs font-semibold text-maroon-900">
-              <span className="px-2.5 py-1 rounded-lg bg-rose-50 border border-rose-200/70 text-[11px]">React 18</span>
-              <span className="px-2.5 py-1 rounded-lg bg-rose-50 border border-rose-200/70 text-[11px]">Tailwind CSS</span>
-              <span className="px-2.5 py-1 rounded-lg bg-rose-50 border border-rose-200/70 text-[11px]">Framer Motion</span>
-              <span className="px-2.5 py-1 rounded-lg bg-rose-50 border border-rose-200/70 text-[11px]">RESTful APIs</span>
-            </div>
-          </motion.div>
-
-          {/* Card 4: Applied AI & Agents (Wide Bento Card - md:col-span-2) */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="md:col-span-2 p-7 sm:p-8 rounded-3xl bg-gradient-to-br from-white via-[#fcf7fa] to-[#fbf0f5] border border-rose-200/80 shadow-sm hover:shadow-2xl hover:shadow-pink-100/70 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between gap-3 mb-5">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-maroon-900 to-rose-600 text-white flex items-center justify-center shadow-md shadow-maroon-900/15 group-hover:scale-110 transition-transform duration-300">
-                  <BrainCircuit className="w-6 h-6" />
-                </div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100/70 border border-rose-200/80 text-[11px] font-bold text-maroon-900 uppercase tracking-wider">
-                  <Bot className="w-3.5 h-3.5 text-rose-600" />
-                  <span>Multi-Agent Systems</span>
-                </div>
               </div>
 
               <h3 className="text-xl sm:text-2xl font-extrabold text-maroon-950 mb-3">
-                Applied AI & Agents
+                Modern Web Craft
               </h3>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-xl">
-                Architecting collaborative multi-agent autonomous pipelines and LLM systems using CrewAI, local Ollama models, and Google Gemini API integration to turn complex queries into structured insights.
+              <p className="text-xs sm:text-sm text-gray-700 leading-relaxed mb-4">
+                Building responsive, accessible web interfaces with React and Tailwind CSS. Focused on clean component structure, predictable state, and intuitive user experiences.
               </p>
             </div>
 
-            {/* Multi-Agent Workflow Visual */}
-            <div className="mt-6 pt-6 border-t border-rose-100/90 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-2 p-2.5 px-4 rounded-2xl bg-white/90 border border-rose-200/80 shadow-xs text-xs font-bold text-maroon-950 w-full sm:w-auto justify-between sm:justify-start">
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
-                  Researcher Agent
-                </span>
-                <ArrowRight className="w-3.5 h-3.5 text-rose-400" />
-                <span className="text-maroon-800">Analyst Agent</span>
-                <ArrowRight className="w-3.5 h-3.5 text-rose-400" />
-                <span className="text-emerald-700">Structured Output</span>
-              </div>
-
-              <div className="flex flex-wrap gap-2 text-xs font-semibold text-maroon-900 w-full sm:w-auto justify-start sm:justify-end">
-                <span className="px-3 py-1 rounded-full bg-white border border-rose-200/80 shadow-xs">CrewAI</span>
-                <span className="px-3 py-1 rounded-full bg-white border border-rose-200/80 shadow-xs">Ollama Local</span>
-                <span className="px-3 py-1 rounded-full bg-white border border-rose-200/80 shadow-xs">Gemini API</span>
-              </div>
+            {/* Clean, lightweight tags */}
+            <div className="mt-5 pt-4 border-t border-rose-100 flex flex-wrap gap-2 text-xs font-semibold text-maroon-900">
+              <span className="px-3 py-1 rounded-lg bg-rose-50/80 border border-rose-200/70 text-[11px]">React</span>
+              <span className="px-3 py-1 rounded-lg bg-rose-50/80 border border-rose-200/70 text-[11px]">Tailwind CSS</span>
+              <span className="px-3 py-1 rounded-lg bg-rose-50/80 border border-rose-200/70 text-[11px]">JavaScript</span>
+              <span className="px-3 py-1 rounded-lg bg-rose-50/80 border border-rose-200/70 text-[11px]">REST APIs</span>
             </div>
           </motion.div>
 
@@ -252,7 +206,7 @@ export default function AboutSection() {
                   I’m an MCA student working at the intersection of data analytics and software engineering. Driven by curiosity, I love transforming messy, complex datasets into clear, actionable stories—whether that means modeling retention drivers in SQL and Power BI or uncovering operational trends that inform real business decisions.
                 </p>
                 <p>
-                  Alongside analytics, I build fast, intuitive web applications and autonomous AI workflows with React, Python, and C++. With a strong foundation in data structures and 250+ LeetCode problems solved, my focus is on shipping clean, performant software that bridges raw data with seamless user experiences.
+                  Alongside analytics, I build responsive web applications with React, Python, and C++. With a solid foundation in data structures and 250+ LeetCode problems solved, my focus is on writing clean, dependable code that connects analytical findings with intuitive user interfaces.
                 </p>
               </div>
             </div>

@@ -20,31 +20,31 @@ import { featuredProjects } from '../data/portfolioData';
 const projectDetails = {
   'mental-health-chatbot': {
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
-    domain: 'AI & Healthcare',
-    role: 'AI & Full-Stack Developer',
+    domain: 'Conversational AI',
+    role: 'Full-Stack Developer',
     year: '2024',
-    metric: '< 450ms Latency'
+    metric: 'Multi-Agent Flow'
   },
   'tripnova': {
     image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80',
-    domain: 'Travel Tech Platform',
+    domain: 'Travel Planner App',
     role: 'Full-Stack Developer',
     year: '2024',
     metric: '120+ Destinations'
   },
   'abtalks': {
     image: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80',
-    domain: 'Community Audio Hub',
-    role: 'Frontend & WebSocket Dev',
+    domain: 'Discussion Hub',
+    role: 'Frontend Developer',
     year: '2023',
-    metric: '40+ Channels'
+    metric: '40+ Topics'
   },
   'task-management': {
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-    domain: 'Enterprise SaaS',
-    role: 'Frontend Architect',
+    domain: 'Productivity Tool',
+    role: 'Frontend Developer',
     year: '2023',
-    metric: '1,000+ Tasks'
+    metric: 'Kanban Workflow'
   }
 };
 
@@ -65,7 +65,7 @@ export default function ProjectsSection() {
             Featured Work
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Highlighting selected projects that showcase my expertise and creative problem-solving approach across data analytics, full-stack systems, and applied AI.
+            Selected academic and personal projects demonstrating hands-on work in data analysis, modern web development, and software problem solving.
           </p>
         </div>
 
@@ -75,9 +75,9 @@ export default function ProjectsSection() {
             const meta = projectDetails[project.id] || {
               image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
               domain: project.category || 'Software Engineering',
-              role: 'Lead Developer',
+              role: 'Developer',
               year: '2024',
-              metric: 'Production Ready'
+              metric: 'Working Prototype'
             };
 
             const isEven = idx % 2 === 0;
@@ -148,7 +148,7 @@ export default function ProjectsSection() {
                   <div className="flex flex-wrap items-center gap-y-2 gap-x-5 text-xs sm:text-sm text-slate-500 mb-8 pt-3 border-t border-slate-100">
                     <div className="flex items-center gap-1.5">
                       <Globe className="w-4 h-4 text-slate-400 shrink-0" />
-                      <span>Client:</span>
+                      <span>Domain:</span>
                       <span className="font-semibold text-slate-800">{meta.domain}</span>
                     </div>
                     <div className="flex items-center gap-1.5">

@@ -77,7 +77,7 @@ export default function HeroSection({ onOpenResumeModal }) {
           
           {/* Left Column: Clean Minimal Branding & Guidance (lg:col-span-5 xl:col-span-4) */}
           <div className="lg:col-span-5 xl:col-span-4 pb-8 sm:pb-12 lg:pb-24 z-20 flex flex-col items-center lg:items-start text-center lg:text-left">
-            {/* 1. Journey Status Badge: MCA Student • Bridging Data, Code & AI */}
+            {/* 1. Journey Status Badge: MCA Student • Data Analytics & Web Development */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function HeroSection({ onOpenResumeModal }) {
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <span className="text-xs font-bold text-maroon-900 tracking-wide uppercase">
-                MCA Student • Bridging Data, Code & AI
+                MCA Student • Data Analytics & Web Development
               </span>
             </motion.div>
 
@@ -121,7 +121,7 @@ export default function HeroSection({ onOpenResumeModal }) {
               className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-maroon-900 bg-rose-50/90 border border-rose-200/90 px-3.5 py-1.5 rounded-full shadow-sm"
             >
               <span className="text-rose-600 font-bold">⚡</span>
-              <span>Currently: Tackling 250+ DSA in C++ & analyzing real-world retail datasets</span>
+              <span>Currently: Solving 250+ DSA in C++ & analyzing open retail datasets</span>
             </motion.div>
 
             {/* 3. Subtext: "Move cursor to call me !" with cursor icon */}

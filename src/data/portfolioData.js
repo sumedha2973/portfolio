@@ -1,25 +1,25 @@
 export const personalInfo = {
   name: "Sumedha",
   role: "Data Analyst & Web Developer",
-  subRole: "MCA Student | Bridging Analytics, Software & AI",
+  subRole: "MCA Student | Data Analytics & Web Development",
   email: "sumedha.analytics@gmail.com",
   linkedin: "https://linkedin.com/in/sumedha-dev",
   github: "https://github.com/sumedha-dev",
   leetcode: "https://leetcode.com/sumedha-codes",
-  bio: "Master of Computer Applications (MCA) scholar with an intense passion for translating raw datasets into compelling business intelligence and architecting performant, intuitive web applications. Fluent in Python, SQL, modern React, and autonomous AI agents.",
+  bio: "Master of Computer Applications (MCA) student passionate about analyzing datasets, extracting actionable insights, and building clean, responsive web applications. Hands-on with Python, SQL, Power BI, React, and C++.",
   location: "India",
   status: "Actively seeking Data Analyst & Software Engineer Roles",
 };
 
 export const skillsData = {
   dataAnalytics: [
-    { name: "Python", level: 90, desc: "Data manipulation, automated pipelines & statistical modeling" },
-    { name: "Pandas & NumPy", level: 92, desc: "High-performance data wrangling, cleaning & transformations" },
+    { name: "Python", level: 90, desc: "Data analysis, data wrangling & analytical scripting" },
+    { name: "Pandas & NumPy", level: 92, desc: "Data wrangling, cleaning & transformations" },
     { name: "SQL / MySQL", level: 88, desc: "Complex joins, subqueries, CTEs, indexing & window functions" },
     { name: "Microsoft Excel", level: 94, desc: "Advanced XLOOKUP, INDEX/MATCH, Dynamic Pivots & Macros" },
     { name: "Power BI & DAX", level: 86, desc: "Interactive dashboards, relational data models & KPI metrics" },
     { name: "Data Cleaning", level: 95, desc: "Handling missing values, outlier detection & deduplication" },
-    { name: "Data Visualization", level: 90, desc: "Matplotlib, Seaborn, Plotly & executive reporting" },
+    { name: "Data Visualization", level: 90, desc: "Matplotlib, Seaborn, Plotly & visual reporting" },
   ],
   softwareWeb: [
     { name: "C++", level: 85, desc: "Object-oriented programming, memory management & STL" },
@@ -29,14 +29,14 @@ export const skillsData = {
     { name: "JavaScript (ES6+)", level: 90, desc: "Async/await, DOM APIs, modern syntax & tooling" },
     { name: "HTML5 & CSS3", level: 92, desc: "Semantic markup, modern layouts, Flexbox & CSS Grid" },
     { name: "Flask", level: 82, desc: "RESTful APIs, routing, Jinja templates & Python backend" },
-    { name: "Git & GitHub", level: 88, desc: "Version control, branching, PR workflows & CI/CD" },
+    { name: "Git & GitHub", level: 88, desc: "Version control, branching & collaborative workflows" },
   ],
   aiTools: [
-    { name: "CrewAI", level: 84, desc: "Multi-agent orchestration, autonomous workflows & task delegation" },
-    { name: "Ollama", level: 82, desc: "Local LLM deployment, fine-tuning prompts & offline inference" },
+    { name: "CrewAI", level: 84, desc: "Multi-agent task workflows & prompt experimentation" },
+    { name: "Ollama", level: 82, desc: "Local LLM deployment, prompt testing & offline inference" },
     { name: "Gemini APIs", level: 86, desc: "Multimodal prompts, structured JSON output & function calling" },
-    { name: "Jupyter Notebook", level: 92, desc: "Exploratory data analysis & reproducible research notebooks" },
-    { name: "VS Code & Postman", level: 90, desc: "Modern developer workflow & API testing suite" },
+    { name: "Jupyter Notebook", level: 92, desc: "Exploratory data analysis & reproducible analysis notebooks" },
+    { name: "VS Code & Postman", level: 90, desc: "Developer workflow & API endpoint testing" },
   ]
 };
 
@@ -44,16 +44,16 @@ export const featuredProjects = [
   {
     id: "mental-health-chatbot",
     title: "Mental Health Support Chatbot",
-    tagline: "Empathetic Multi-Agent Wellness System",
+    tagline: "Interactive Conversational Wellness Project",
     category: "AI & Full-Stack",
     featured: true,
     badge: "AI Powered",
-    description: "An empathetic conversational support platform engineered with Flask, CrewAI multi-agent orchestration, and Ollama/Gemini APIs. Features sentiment evaluation, crisis safety guardrails, personalized relaxation suggestions, and mood tracking.",
+    description: "A conversational wellness prototype built with Flask, CrewAI agent workflows, and Gemini APIs. Features sentiment evaluation, supportive wellness suggestions, and mood check-in tracking.",
     techStack: ["Flask", "CrewAI", "Ollama", "Gemini API", "Python", "Tailwind CSS"],
     highlights: [
-      "Orchestrated 3 collaborative AI agents: Empathetic Listener, Wellness Advisor, and Safety Guardrail Monitor.",
-      "Dual inference capability: runs offline via Ollama or scales with Google Gemini API for high throughput.",
-      "Built-in sentiment scoring engine to monitor mood shifts across multi-turn sessions.",
+      "Designed 3 cooperating agents for conversational listening, wellness suggestions, and safety boundaries.",
+      "Dual inference capability: runs offline via Ollama or connects with Google Gemini API.",
+      "Integrated sentiment scoring to track mood shifts across conversation sessions.",
       "Strict data privacy with zero persistent user session tracking."
     ],
     liveUrl: "https://mental-health-support-chatbot.demo.app",
@@ -63,11 +63,11 @@ export const featuredProjects = [
   {
     id: "tripnova",
     title: "TripNova — Smart Travel Planner",
-    tagline: "Intelligent Itinerary & Budget Generator",
+    tagline: "Personalized Itinerary & Budget Planner",
     category: "Web Application",
     featured: true,
     badge: "Full-Stack",
-    description: "An intelligent travel planning platform that generates personalized multi-day trip itineraries, estimates budgets, optimizes routes, and visualizes travel schedules with real-time weather and tourist insights.",
+    description: "A full-stack travel planner web app that creates personalized multi-day itineraries, calculates estimated budgets, and organizes trip schedules with weather and destination details.",
     techStack: ["React", "JavaScript", "Tailwind CSS", "REST APIs", "Framer Motion"],
     highlights: [
       "Dynamic day-by-day itinerary builder with interactive drag-and-drop scheduling.",
@@ -82,11 +82,11 @@ export const featuredProjects = [
   {
     id: "abtalks",
     title: "ABTalks — Community Discussion Platform",
-    tagline: "Real-time Interactive Dialogue & Audio Hub",
+    tagline: "Community Discussion & Audio Snippets Hub",
     category: "Web Application",
     featured: true,
     badge: "Community",
-    description: "A community discussion and interview platform featuring real-time discussion boards, category channels, interactive audio player snippets, and responsive upvoting/comment threads.",
+    description: "A community discussion web app featuring categorized discussion threads, integrated audio player clips, and interactive comments.",
     techStack: ["React", "CSS3", "JavaScript", "REST APIs", "Context API"],
     highlights: [
       "Modular audio/podcast player with timestamp bookmarking and speed control.",
@@ -96,26 +96,26 @@ export const featuredProjects = [
     ],
     liveUrl: "https://abtalks-platform.demo.app",
     githubUrl: "https://github.com/sumedha-dev/abtalks-platform",
-    stats: { "Active Topics": "40+", "User Engagement": "+65%", "Lighthouse Score": "98" }
+    stats: { "Discussion Topics": "40+", "Channels": "6", "Lighthouse Score": "98" }
   },
   {
     id: "task-management",
     title: "Task Management Suite",
-    tagline: "Agile Productivity & Workflow Tracker",
+    tagline: "Clean Kanban Sprint & Task Organizer",
     category: "Software & Web",
     featured: true,
     badge: "Productivity",
-    description: "A streamlined, agile-inspired project and task management dashboard designed for high-focus engineering sprints. Includes Kanban swimlanes, priority indicators, deadline countdowns, and completion analytics.",
+    description: "A responsive task management app built with React, featuring drag-and-drop style Kanban columns, task priorities, due date tracking, and progress metrics.",
     techStack: ["React", "Tailwind CSS", "LocalStorage", "Lucide Icons", "Framer Motion"],
     highlights: [
       "Dynamic Kanban board supporting To-Do, In-Progress, and Completed workflows.",
       "Multi-criteria filtering: search by tag, assignee, deadline, or priority flag.",
-      "Automated progress metrics calculating sprint velocity and bottleneck alerts.",
-      "Keyboard shortcuts for lightning-fast task entry and status toggling."
+      "Automated progress metrics calculating task completion rates and sprint velocity.",
+      "Keyboard shortcuts for quick task entry and status toggling."
     ],
     liveUrl: "https://task-management-flow.demo.app",
     githubUrl: "https://github.com/sumedha-dev/task-management-suite",
-    stats: { "Tasks Handled": "1,000+", "Storage": "Local & Cloud", "Load Speed": "0.3s" }
+    stats: { "Tasks Supported": "500+", "Storage": "LocalStorage", "Performance": "Fast & Smooth" }
   }
 ];
 
@@ -123,19 +123,19 @@ export const dataAnalyticsProjects = [
   {
     id: "hr-analytics",
     title: "HR Workforce & Attrition Analytics",
-    subtitle: "Predictive Employee Turnover & Retention Modeling",
+    subtitle: "Exploratory Employee Turnover & Retention Study",
     badge: "Power BI & Python",
-    description: "Comprehensive analytical study of employee demographic, performance, and compensation factors influencing corporate turnover. Identified pivotal retention levers that reduce voluntary resignation.",
+    description: "Exploratory data analysis investigating demographic, performance, and compensation factors related to employee turnover using HR survey data. Identified key correlations with overtime and tenure.",
     kpis: [
-      { label: "Overall Attrition", value: "16.1%", change: "-3.4% target" },
-      { label: "Key Risk Factor", value: "Overtime (>35hr)", change: "2.8x attrition" },
+      { label: "Overall Attrition", value: "16.1%", change: "Target: -3.4%" },
+      { label: "Key Risk Factor", value: "Overtime (>35hr)", change: "2.8x higher attrition" },
       { label: "Avg Tenure", value: "4.8 Years", change: "+0.6 YoY" },
       { label: "Retention Impact", value: "92% Predicted", change: "Model Accuracy" }
     ],
     tools: ["Python", "Pandas", "Power BI", "DAX", "Seaborn"],
     insights: [
-      "Employees working frequent overtime had an attrition rate of 30.5% vs 10.2% for standard hours.",
-      "Sales Representatives and Laboratory Technicians showed the highest turnover vulnerability.",
+      "Employees working frequent overtime showed an attrition rate of 30.5% vs 10.2% for standard hours.",
+      "Sales and technical roles showed higher turnover vulnerability, highlighting key focus areas.",
       "Stock option levels and promotion frequency within 3 years demonstrated an inverse correlation with turnover."
     ],
     githubUrl: "https://github.com/sumedha-dev/hr-workforce-analytics",
@@ -144,41 +144,41 @@ export const dataAnalyticsProjects = [
   {
     id: "retail-sales-analytics",
     title: "Retail Sales & Customer Segmentation",
-    subtitle: "RFM Cohort Analysis & Revenue Optimization",
+    subtitle: "RFM Customer Segmentation & Trend Analysis",
     badge: "SQL & Python",
-    description: "End-to-end exploratory data analysis on a multi-store retail dataset spanning 500,000+ transactions. Performed RFM (Recency, Frequency, Monetary) segmentation to unlock customer lifetime value.",
+    description: "Exploratory analysis on an open retail sales dataset spanning 50,000+ transactions. Applied RFM (Recency, Frequency, Monetary) segmentation to understand customer purchasing habits and segment value.",
     kpis: [
-      { label: "Total Revenue Analyzed", value: "$4.2M", change: "12-month span" },
-      { label: "Top Customer Segment", value: "Champions (18%)", change: "Drives 54% Rev" },
+      { label: "Transaction Scope", value: "54K+ Rows", change: "12-Month Dataset" },
+      { label: "Top Customer Segment", value: "Champions (18%)", change: "Drives 54% of Sales" },
       { label: "Repeat Purchase Rate", value: "64.2%", change: "+8.1% YoY" },
       { label: "Avg Order Value", value: "$78.40", change: "+12% cross-sell" }
     ],
     tools: ["MySQL", "Python", "NumPy", "Matplotlib", "RFM Modeling"],
     insights: [
-      "Identified that top 20% of customers generated 62% of aggregate gross margins.",
-      "Formulated targeted re-engagement cohorts for 'At Risk' shoppers, reclaiming 14% lapsed purchasers.",
-      "Optimized seasonal inventory stock suggestions based on 3-year recurring holiday purchasing spikes."
+      "Found that the top 18% of frequent shoppers generated over half of total sales volume.",
+      "Segmented customer groups into Champions, Potential Loyalists, and At-Risk cohorts for targeted outreach.",
+      "Identified seasonal inventory purchasing spikes to assist in promotional planning."
     ],
     githubUrl: "https://github.com/sumedha-dev/retail-sales-analytics",
     liveReportUrl: "https://github.com/sumedha-dev/retail-sales-analytics#dashboards"
   },
   {
     id: "excel-sales-dashboard",
-    title: "Executive Excel Sales Dashboard",
-    subtitle: "Dynamic Pivot Modeling & DAX Metric Slicers",
+    title: "Sales Performance Excel Dashboard",
+    subtitle: "Dynamic Pivot Tables & Interactive Slicers",
     badge: "Advanced Excel",
-    description: "Interactive executive-ready Excel BI dashboard built with relational data models, nested XLOOKUP formulas, conditional trend formatting, and synchronized slicers for regional performance tracking.",
+    description: "An interactive Excel dashboard built using dynamic pivot tables, nested formulas (XLOOKUP), conditional formatting, and synchronized slicers to analyze regional sales trends.",
     kpis: [
-      { label: "Quarterly Target", value: "$1.85M", change: "108% Attained" },
+      { label: "Dataset Revenue", value: "$1.85M", change: "4 Regional Markets" },
       { label: "Operating Margin", value: "24.6%", change: "+2.1% QoQ" },
       { label: "Top Region", value: "North America", change: "42% Volume" },
-      { label: "SKU SKU Count", value: "450+ Items", change: "Real-time Pivot" }
+      { label: "SKU Catalog Scope", value: "450+ Items", change: "Dynamic Pivot" }
     ],
     tools: ["Excel Power Pivot", "DAX", "Dynamic Charts", "Nested Formulas", "Conditional Formatting"],
     insights: [
-      "Engineered automated refresh macros slashing monthly reporting prep time from 6 hours to 8 minutes.",
+      "Streamlined data consolidation workflows to quickly update weekly summary charts.",
       "Implemented dynamic KPI variance cards showing MoM and YoY variances with visual alert thresholds.",
-      "Provided C-suite executives with single-click filtering across product lines, sales reps, and retail channels."
+      "Designed single-click interactive filters for viewing sales metrics across product categories and regions."
     ],
     githubUrl: "https://github.com/sumedha-dev/excel-sales-performance-dashboard",
     liveReportUrl: "https://github.com/sumedha-dev/excel-sales-performance-dashboard#preview"
@@ -192,8 +192,8 @@ export const certificationsAndAchievements = [
     badge: "Deloitte Verified",
     date: "2024",
     type: "Certification",
-    description: "Hands-on data analysis simulation evaluating real-world business datasets, data cleaning, forensic telemetry, and interactive dashboard storytelling for corporate leadership.",
-    skillsGained: ["Business Acumen", "Data Quality Assessment", "Forensic Data Analysis", "Executive Communication"],
+    description: "Hands-on data analysis simulation evaluating real-world business datasets, data cleaning, forensic telemetry, and interactive dashboard storytelling.",
+    skillsGained: ["Business Acumen", "Data Quality Assessment", "Data Analysis", "Communication"],
     credentialLink: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/deloitte-sumedha.pdf"
   },
   {
@@ -202,8 +202,8 @@ export const certificationsAndAchievements = [
     badge: "Cisco Certified",
     date: "2023",
     type: "Certification",
-    description: "Rigorous examination in core Python programming, data structures, object-oriented concepts, exception handling, and algorithm design.",
-    skillsGained: ["Core Python", "OOP Principles", "Data Structures", "Modular Architecture"],
+    description: "Examination in core Python programming, data structures, object-oriented concepts, exception handling, and algorithm design.",
+    skillsGained: ["Core Python", "OOP Principles", "Data Structures", "Modular Code"],
     credentialLink: "https://www.credly.com/org/cisco/sumedha"
   },
   {
@@ -212,18 +212,18 @@ export const certificationsAndAchievements = [
     badge: "Top 5 Finalist",
     date: "2024",
     type: "Hackathon",
-    description: "Built an AI-driven predictive resource allocation prototype within 36 hours of non-stop rapid engineering, pitching directly to enterprise judges.",
-    skillsGained: ["Rapid Prototyping", "Team Leadership", "Pitching & Presentation", "AI Integration"],
+    description: "Built a predictive resource allocation prototype during a 36-hour hackathon sprint, presenting our working solution to industry judges.",
+    skillsGained: ["Rapid Prototyping", "Team Collaboration", "Presentation", "Applied AI"],
     credentialLink: "#hackathons"
   },
   {
-    title: "Academic Excellence & MCA Tech Leadership",
+    title: "Academic Excellence & MCA Peer Learning",
     issuer: "Department of Computer Applications",
     badge: "Honors",
     date: "2023 - Present",
     type: "College Achievement",
-    description: "Consistently ranked among the top percentile in MCA coursework. Led peer workshops in SQL database optimization, Python data analytics, and modern web development.",
-    skillsGained: ["Mentorship", "Technical Writing", "Curriculum Facilitation", "Peer Code Reviews"],
+    description: "Maintained strong academic performance throughout MCA coursework. Conducted peer study sessions on SQL queries, Python data basics, and web fundamentals.",
+    skillsGained: ["Peer Learning", "Technical Sharing", "SQL & Database Basics", "Code Practice"],
     credentialLink: "#college"
   }
 ];

@@ -58,16 +58,16 @@ const kpiConfigs = {
   ],
   'retail-sales-analytics': [
     {
-      label: 'Gross Revenue Analyzed',
-      value: '$4.2M',
-      impact: '500,000+ Transactions',
+      label: 'Transaction Scope',
+      value: '54K+ Rows',
+      impact: '50,000+ Transactions',
       badgeClass: 'bg-emerald-50 text-emerald-700 border-emerald-200/90 shadow-emerald-100/50',
       icon: TrendingUp,
       highlight: true
     },
     {
       label: 'Champion Cohort',
-      value: '54% Revenue',
+      value: '54% Sales',
       impact: 'Top 18% RFM Segment',
       badgeClass: 'bg-pink-50 text-pink-600 border-pink-200/90 shadow-pink-100/50',
       icon: Target,
@@ -92,9 +92,9 @@ const kpiConfigs = {
   ],
   'excel-sales-dashboard': [
     {
-      label: 'Quarterly Sales Target',
+      label: 'Analyzed Sales Volume',
       value: '$1.85M',
-      impact: '108% Target Attainment',
+      impact: 'Regional Retail Data',
       badgeClass: 'bg-indigo-50 text-indigo-600 border-indigo-200/90 shadow-indigo-100/50',
       icon: TrendingUp,
       highlight: true
@@ -108,9 +108,9 @@ const kpiConfigs = {
       highlight: false
     },
     {
-      label: 'Monthly Prep Time',
-      value: '8 Mins',
-      impact: 'Slashed from 6 Hours',
+      label: 'Reporting Flow',
+      value: 'Automated',
+      impact: 'Dynamic Pivot Slicers',
       badgeClass: 'bg-pink-50 text-pink-600 border-pink-200/90 shadow-pink-100/50',
       icon: Clock,
       highlight: true
@@ -118,7 +118,7 @@ const kpiConfigs = {
     {
       label: 'Catalog & Region Scope',
       value: '450+ SKUs',
-      impact: '42% Volume North America',
+      impact: '4 Regional Territories',
       badgeClass: 'bg-purple-50 text-purple-700 border-purple-200/90 shadow-purple-100/50',
       icon: FileSpreadsheet,
       highlight: false
@@ -146,7 +146,7 @@ export default function DataAnalyticsSection() {
             Data Analytics Highlights
           </h2>
           <p className="mt-3.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Analytical studies demonstrating statistical modeling, SQL cohort segmentation, Power BI executive dashboards, and automated business insights.
+            Practical analytics case studies exploring SQL querying, exploratory data analysis, RFM customer segmentation, and interactive Power BI dashboards.
           </p>
         </div>
 
@@ -282,9 +282,9 @@ export default function DataAnalyticsSection() {
               <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-xs text-slate-700 font-bold flex items-center justify-between">
                 <span className="flex items-center gap-1.5">
                   <Activity className="w-3.5 h-3.5 text-rose-600" />
-                  <span>Executive Business Impact</span>
+                  <span>Project Metrics & Findings</span>
                 </span>
-                <span className="text-[11px] font-mono text-slate-500 font-medium">Recruiter Spotlights</span>
+                <span className="text-[11px] font-mono text-slate-500 font-medium">Key Highlights</span>
               </div>
 
               {/* 2x2 Prominent Colored Stat Callouts Grid */}
